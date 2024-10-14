@@ -1,0 +1,57 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #f8f9fa;*/
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#slot-machine {
+    font-size: 14em;
+    /* Memperbesar ukuran digit */
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.slot {
+    width: 210px;
+    /* Lebih besar untuk setiap slot */
+    height: 280px;
+    /* Lebih besar untuk setiap slot */
+    background-color: #000; /* #343a40; */
+    color: #ffffff;
+    border: 5px solid #ced4da;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+#generate-btn {
+    font-size: 2em;
+    padding: 0 20px;
+}
+
+#winners {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    text-align: right;
+}
+
+#winner-list {
+    font-size: 1.5em;
+    color: #000;
+}
