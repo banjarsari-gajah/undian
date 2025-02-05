@@ -19,7 +19,10 @@ $(document).ready(function () {
             newNumber.push(Math.floor(Math.random() * 7)); // Digit kedua maksimal 7
             newNumber.push(getRandomNumber()); // Digit ketiga bebas antara minRange dan maxRange
             newNumber.push(getRandomNumber()); // Digit keempat bebas antara minRange dan maxRange
-        } while (previousWinners.some(winner => winner.join('') === newNumber.join('')) && (Number(newNumber.join('')) > maxNumber));
+        } while (
+            previousWinners.some(winner => winner.join('') === newNumber.join('')) || 
+            (Number(newNumber.join('')) > maxNumber)
+        );
         return newNumber;
     }
     
